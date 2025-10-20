@@ -1,0 +1,10 @@
+services:
+  # Our PostgreSQL database
+  db:
+    # Using the latest PostgreSQL image
+    image: postgres:latest
+    ports:
+      - "5432:5432"
+    restart: no
+    environment:
+      POSTGRES_PASSWORD: admin
